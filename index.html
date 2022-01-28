@@ -1,0 +1,31 @@
+<html>
+   <button onclick="update()">NEXT </button> 
+<img id="family_member_image" src="https://images-eu.ssl-images-amazon.com/images/I/51-8FZDrnsL._SX198_BO1,204,203,200_QL40_FMwebp_.jpg">
+<h3 id="family_member_name"></h3>
+    <script>
+    var images = ["https://i.postimg.cc/MGn9GJXw/family.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDzDyqirDjLHY_CpLD_7fEP77Rw77Uiu3YiA&usqp=CAU","https://i.pinimg.com/1200x/f8/a9/dd/f8a9dd5024d6ebed33ae33db724d84e3.jpg","https://png.pngtree.com/element_our/20190529/ourlarge/pngtree-fresh-style-little-sisters-illustration-image_1188262.jpg","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOVA4WVT9_tbCrepan_JnNlX8w2M2IZpZ75huEBn6p4_77v5bQI3xYp7wid9IkmjfU6tI&usqp=CAU","https://st2.depositphotos.com/2291399/9709/v/950/depositphotos_97093536-stock-illustration-cute-cockatiel-cartoon.jpg"]
+    var names=["Family Book","KASI VISWANATHAN", "RADHIKA KASI", "NITIKA SHIVANI", "NAINIKA LAKSHMI","APPU(BIRD)"]
+    var i = 0;
+    function update()
+    {
+        i++;
+        var numbers_of_family_member_in_array = 5
+        if(i > numbers_of_family_member_in_array)
+          {
+              i = 0;
+          }
+        
+        //Debug the code to store list of images in updatedImage. Use images[i]
+        var updatedImage =images [i];
+        //Debug the code to store list of names in updatedName. Use names[i]
+        var updatedName =names [i] ;
+     console.log(updatedImage,updatedName)
+        document.getElementById("family_member_image").src = updatedImage;
+        document.getElementById("family_member_name").innerHTML = updatedName;
+    }</script>
+
+</html>
+
+
+
+
